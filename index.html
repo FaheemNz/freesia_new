@@ -162,19 +162,9 @@
                                 </nav>
                             </div>
                         </div>
-                        <section class="hero-banner">
-                            <div class="web-container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="banner-content">
-                                            <h5 class="mb-3">SPECIALIZED IN CONSTRUCTION, CONTRACTING &amp; MEP</h5>
-                                            <h1 class="mb-0">Freesia - We Build Differently</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="scroll-button"><a href="javascript:void()"
-                                        class="btn web-btn disable-link">SCROLL</a></div>
-                                <div class="hero-bottom-border">&nbsp;</div>
+                        <section>
+                            <div id="images">
+                                <img class="sequencer" src="./assets/sequence_images/0.jpg">
                             </div>
                         </section>
                     </header>
@@ -423,7 +413,16 @@
     <script src="assets/js/vendors/form-validation.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery-sequencer.js"></script>
+    <script>
+        $("div#images").sequencer({
+            count: 10,
+            path: "./assets/sequence_images/",
+            ext: "jpg"
+        }, function() {
+            //$("div#preload").hide();
+        });    
+    </script>
 </body>
-<!-- Mirrored from www.gardinia.ae/partners by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Jan 2023 14:45:34 GMT -->
 
 </html>
