@@ -1,522 +1,721 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <link rel="dns-prefetch" href="index.html">
-    <link rel="dns-prefetch" href="http://cdnjs.cloudflare.com/">
-    <link rel="dns-prefetch" href="http://www.googletagmanager.com/">
-    <link rel="dns-prefetch" href="http://www.w3.org/">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freesia - Careers</title>
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/png">
-    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/vendors/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="assets/css/vendors/animate.compat.css">
-    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/sequence/css/sequence.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" />
-    <style>
-        .loader-first {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 9999;
-            background: #fff;
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .loader-first p {
-            margin-top: 1em;
-            font-size: 20px;
-            font-weight: bold;
-            line-height: 28px;
-        }
-
-        .alert-warnning {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 999999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            font-size: 20px;
-            text-transform: uppercase;
-            text-align: center;
-            line-height: 1.5em;
-            font-weight: 700;
-            color: #fff;
-            background: #000;
-            overflow: hidden;
-        }
-
-        .alert-warnning p {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            font-size: 18px;
-            transform: translate(-50%, -50%);
-            color: #e6e6e6
-        }
-    </style>
-    <link rel="canonical" href="careers.html" />
-    <link rel="stylesheet" href="assets/css/custom.min.css">
-    <meta name="csrf-token" content="ktY8LipT1AAf0gfpcR6T1eNQT9Emf1sefHCrhTkC" />
-    <style>
-        #overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 100;
-            width: 100%;
-            height: 100%;
-            display: none;
-            background: rgba(0, 0, 0, 0.6);
-        }
-
-        .cv-spinner {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .spinner {
-            width: 40px;
-            height: 40px;
-            border: 4px #ddd solid;
-            border-top: 4px #2e93e6 solid;
-            border-radius: 50%;
-            animation: sp-anime 0.8s infinite linear;
-        }
-
-        @keyframes sp-anime {
-            100% {
-                transform: rotate(360deg);
+    <head>
+        <link rel="dns-prefetch" href="index.html">
+        <link rel="dns-prefetch" href="http://cdnjs.cloudflare.com/">
+        <link rel="dns-prefetch" href="http://www.googletagmanager.com/">
+        <link rel="dns-prefetch" href="http://www.w3.org/">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Freesia - Careers</title>
+        <meta property="og:title" content=""/>
+        <meta property="og:description" content=""/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/png">
+        <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/vendors/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="assets/css/vendors/animate.compat.css">
+        <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/sequence/css/sequence.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"/>
+        <style>
+            .loader-first {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+                background: #fff;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                text-align: center;
             }
-        }
 
-        .is-hide {
-            display: none;
-        }
+            .loader-first p {
+                margin-top: 1em;
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 28px;
+            }
 
-        .form-text {
-            color: red;
-        }
-        
-        .page_speed_574617101 {
-            display: none
-        }
+            .alert-warnning {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 999999;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                font-size: 20px;
+                text-transform: uppercase;
+                text-align: center;
+                line-height: 1.5em;
+                font-weight: 700;
+                color: #fff;
+                background: #000;
+                overflow: hidden;
+            }
 
-        .page_speed_372348491 {
-            background-image: url('storage/755/careers-banner.jpg');
-        }
-    </style>
-</head>
+            .alert-warnning p {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                font-size: 18px;
+                transform: translate(-50%, -50%);
+                color: #e6e6e6;
+            }
+        </style>
+        <link rel="canonical" href="careers.html"/>
+        <link rel="stylesheet" href="assets/css/custom.min.css">
+        <meta name="csrf-token" content="ktY8LipT1AAf0gfpcR6T1eNQT9Emf1sefHCrhTkC"/>
+        <style>
+            #overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 100;
+                width: 100%;
+                height: 100%;
+                display: none;
+                background: rgba(0, 0, 0, 0.6);
+            }
 
-<body class="page-careers">
-    <div id="portrait-warnning" class="alert-warnning page_speed_574617101">
-        <p>For an optimal experience please<br> rotate your device to portrait mode</p>
-    </div>
-    <div class="v-preloader" id="preloader"></div>
-    <div class="page-preloader" id="page-preloader">
-        <div class="page-preloader__line"></div>
-        <div class="page-preloader__progress">00%</div>
-    </div>
-    <div class="page" id="page">
-        <div class="topbar for-desktop-show header_fixed show-fixed" id="topheader">
-            <div class="web-container">
-                <nav class="navbar navbar-expand-xl navbar-light"><a class="navbar-brand animate w-50"
+            .cv-spinner {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .spinner {
+                width: 40px;
+                height: 40px;
+                border: 4px #ddd solid;
+                border-top: 4px #2e93e6 solid;
+                border-radius: 50%;
+                animation: sp-anime 0.8s infinite linear;
+            }
+
+            @keyframes sp-anime {
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .is-hide {
+                display: none;
+            }
+
+            .form-text {
+                color: red;
+            }
+
+            .page_speed_574617101 {
+                display: none;
+            }
+
+            .page_speed_372348491 {
+                background-image: url("storage/755/careers-banner.jpg");
+            }
+        </style>
+    </head>
+
+    <body class="page-careers">
+        <div id="portrait-warnning" class="alert-warnning page_speed_574617101">
+            <p>For an optimal experience please<br> rotate your device to portrait mode</p>
+        </div>
+        <div class="v-preloader" id="preloader"></div>
+        <div class="page-preloader" id="page-preloader">
+            <div class="page-preloader__line"></div>
+            <div class="page-preloader__progress">00%</div>
+        </div>
+        <div class="page" id="page">
+            <div class="topbar for-desktop-show header_fixed show-fixed" id="topheader">
+                <div class="web-container">
+                    <nav class="navbar navbar-expand-xl navbar-light">
+                        <a class="navbar-brand animate w-50"
                         data-animation="fadeInLeft" data-duration="30" href="index.html"><img
                         src="assets/images/logo-new-5.png" alt="" style="width: 100px; height: 60px; transform: scale(2.5)"></a>
-                    <ul class="navbar-nav ml-auto animate" data-animation="fadeInRight" data-duration="30">
-                        <ul class="topmenu" id="expandedMenu">
-                            <li class="nav-item"><a class="nav-link web-light-text" target="_self"
-                                    href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link web-light-text" target="_self"
-                                    href="about-us.html">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link web-light-text" target="_self"
-                                    href="our-team.html">Our Team</a></li>
-                            <li class="nav-item"><a class="nav-link web-light-text" target="_self"
-                                    href="partners.html">Our Partners</a></li>
-                            <li class="nav-item"><a class="nav-link web-light-text" target="_self"
-                                    href="projects.html">Our Projects</a></li>
-                            <li class="nav-item"><a class="nav-link web-light-text" target="_self"
-                                    href="albums.html">Image Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link web-light-text" target="_self"
-                                    href="careers.html">Careers</a></li>
-                            <li class="nav-item"><a class="nav-link web-light-text" target="_self"
-                                    href="contact-us.html">Contact Us</a></li>
+                        <ul class="navbar-nav ml-auto animate" data-animation="fadeInRight" data-duration="30">
+                            <ul class="topmenu" id="expandedMenu">
+                                <li class="nav-item">
+                                    <a class="nav-link web-light-text" target="_self"
+                                    href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link web-light-text" target="_self"
+                                    href="about-us.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link web-light-text" target="_self"
+                                    href="our-team.html">Our Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link web-light-text" target="_self"
+                                    href="partners.html">Our Partners</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link web-light-text" target="_self"
+                                    href="projects.html">Our Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link web-light-text" target="_self"
+                                    href="albums.html">Image Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link web-light-text" target="_self"
+                                    href="careers.html">Careers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link web-light-text" target="_self"
+                                    href="vision.html">Vision</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link web-light-text" target="_self"
+                                    href="contact-us.html">Contact Us</a>
+                                </li>
+                            </ul>
+                            <li class="nav-item menu-bar-icons">
+                                <a href="javascript:void()" class="nav-link"
+                                id="toExpand">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span></a>
+                            </li>
                         </ul>
-                        <li class="nav-item menu-bar-icons"><a href="javascript:void()" class="nav-link"
-                                id="toExpand"><span></span><span></span><span></span></a></li>
-                    </ul>
-                </nav>
+                    </nav>
+                </div>
             </div>
-        </div>
-        <div class="app" id="app" data-v-page="home-page" data-v-pageAjax-name="home-page">
-            <div class="scroll home-page" id="scroll">
-                <div class="scroll__outer">
-                    <header class="innerpages page_speed_372348491">
-                        <div class="topbar for-mobile-show" id="for-mobile-show">
-                            <div class="web-container">
-                                <nav class="navbar navbar-expand-xl navbar-light"><a class="navbar-brand animate w-50"
+            <div class="app" id="app" data-v-page="home-page" data-v-pageAjax-name="home-page">
+                <div class="scroll home-page" id="scroll">
+                    <div class="scroll__outer">
+                        <header class="innerpages page_speed_372348491">
+                            <div class="topbar for-mobile-show" id="for-mobile-show">
+                                <div class="web-container">
+                                    <nav class="navbar navbar-expand-xl navbar-light">
+                                        <a class="navbar-brand animate w-50"
                                         data-animation="fadeInLeft" data-duration="30" href="index.html"><img
                                             src="storage/148/logo-white.svg" alt="" class="w-100"></a>
-                                    <ul class="navbar-nav ml-auto animate" data-animation="fadeInRight"
+                                        <ul class="navbar-nav ml-auto animate" data-animation="fadeInRight"
                                         data-duration="30">
-                                        <li class="nav-item"><a href="javascript:void()" class="nav-link"
-                                                id="sidebarCollapse"><svg xmlns="http://www.w3.org/2000/svg"
+                                            <li class="nav-item">
+                                                <a href="javascript:void()" class="nav-link"
+                                                id="sidebarCollapse">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
                                                     width="41.5" height="28.725" viewBox="0 0 41.5 28.725">
-                                                    <g id="Group_20" data-name="Group 20"
+                                                        <g id="Group_20" data-name="Group 20"
                                                         transform="translate(-1740 -74)">
-                                                        <line id="Line_1" data-name="Line 1" x2="40.5"
+                                                            <line id="Line_1" data-name="Line 1" x2="40.5"
                                                             transform="translate(1740.5 74.5)" fill="none"
-                                                            stroke="#fefefe" stroke-linecap="round" stroke-width="1" />
-                                                        <line id="Line_2" data-name="Line 2" x2="40.5"
+                                                            stroke="#fefefe" stroke-linecap="round" stroke-width="1"/>
+                                                            <line id="Line_2" data-name="Line 2" x2="40.5"
                                                             transform="translate(1740.5 88.363)" fill="none"
-                                                            stroke="#fefefe" stroke-linecap="round" stroke-width="1" />
-                                                        <line id="Line_3" data-name="Line 3" x2="40.5"
+                                                            stroke="#fefefe" stroke-linecap="round" stroke-width="1"/>
+                                                            <line id="Line_3" data-name="Line 3" x2="40.5"
                                                             transform="translate(1740.5 102.225)" fill="none"
-                                                            stroke="#fefefe" stroke-linecap="round" stroke-width="1" />
-                                                    </g>
-                                                </svg></a></li>
-                                    </ul>
-                                </nav>
+                                                            stroke="#fefefe" stroke-linecap="round" stroke-width="1"/>
+                                                        </g>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
+                            <section class="hero-banner">
+                                <div class="web-container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="banner-content">
+                                                <h5 class="mb-3">SPECIALIZED IN CONSTRUCTION, CONTRACTING &amp; MEP</h5>
+                                                <h1 class="mb-0">CAREERS</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="scroll-button">
+                                        <a href="javascript:void()"
+                                        class="btn web-btn disable-link">SCROLL</a>
+                                    </div>
+                                    <div class="hero-bottom-border">&nbsp;</div>
+                                </div>
+                            </section>
+                        </header>
+                        <div class="wrapper">
+                            <nav id="sidebar">
+                                <div></div>
+                                <div class="sidebar-header">
+                                    <button id="dismiss" class="btn float-right">
+                                        <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="27.687" height="26.227"
+                                        viewBox="0 0 27.687 26.227">
+                                            <defs>
+                                                <style>
+                                                    .cls-sidebar {
+                                                        fill: none !important;
+                                                        stroke: #fff !important;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g id="Group_108" transform="translate(-1615.157 -201.136)">
+                                                <path id="Line_40" d="M27 0L0 25.5" class="cls-sidebar"
+                                                transform="translate(1615.5 201.5)"/>
+                                                <path id="Line_41" d="M0 0L27 25.5" class="cls-sidebar"
+                                                transform="translate(1615.5 201.5)"/>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <ul class="list-unstyled components">
+                                    <li>
+                                        <a target="_self" href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a target="_self" href="about-us.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a target="_self" href="our-team.html">Our Team</a>
+                                    </li>
+                                    <li>
+                                        <a target="_self" href="partners.html">Our Partners</a>
+                                    </li>
+                                    <li>
+                                        <a target="_self" href="projects.html">Our Projects</a>
+                                    </li>
+                                    <li>
+                                        <a target="_self" href="albums.html">Image Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a target="_self" href="careers.html">Careers</a>
+                                    </li>
+                                    <li>
+                                        <a target="_self" href="contact-us.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-                        <section class="hero-banner">
+                        <div class="overlay"></div>
+                        <section class="half-g animate" data-animation="fadeInUp" data-duration="50">
+                            <div class="top-line">&nbsp;</div>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">&nbsp;</div>
+                                <div class="col-md-8">
+                                    <div class="logo-box text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="640"
+                                        height="713.607" viewBox="0 0 640 713.607">
+                                            <defs>
+                                                <style>
+                                                    .cls-2 {
+                                                        fill: #fff;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g id="Group_81" opacity="0.32" transform="translate(11.56 6.905)">
+                                                <path id="Path_124"
+                                                d="M410.246 439.776a2.144 2.144 0 0 0 1.393.544 1.747 1.747 0 0 0 1.243-.494l27.36-24.292a1.829 1.829 0 0 0 .646-1.385 1.776 1.776 0 0 0-.547-1.386L254.149 227.531a1.9 1.9 0 0 0-1.741-.494 274.674 274.674 0 0 0-41.288 11.428 1.833 1.833 0 0 0-1.194 1.385 1.972 1.972 0 0 0 .5 1.781z"
+                                                class="cls-2" transform="translate(19.265 -226.372)"/>
+                                                <path id="Path_125"
+                                                d="M333.463 390.866a1.946 1.946 0 0 0 1.343.544h.6a155.959 155.959 0 0 1 43.128-7.323 1.941 1.941 0 0 0 1.741-1.187 2.022 2.022 0 0 0-.448-2.078L231.438 233.24a2.047 2.047 0 0 0-2.139-.4 214.261 214.261 0 0 0-33.578 18.56 1.928 1.928 0 0 0-.846 1.435 1.876 1.876 0 0 0 .548 1.484z"
+                                                class="cls-2" transform="translate(-40.4 -203.831)"/>
+                                                <path id="Path_126"
+                                                d="M313.626 398.048a2.144 2.144 0 0 0 1.392.544 1.945 1.945 0 0 0 1.294-.495 149.146 149.146 0 0 1 28.454-21.868 1.977 1.977 0 0 0 .995-1.435 1.726 1.726 0 0 0-.548-1.583l-132.071-131.4a1.9 1.9 0 0 0-2.537 0 275.947 275.947 0 0 0-27.459 24.44 1.875 1.875 0 0 0-.6 1.385 1.779 1.779 0 0 0 .6 1.336z"
+                                                class="cls-2" transform="translate(-89.36 -169.802)"/>
+                                                <path id="Path_127"
+                                                d="M291.128 300.254a1.946 1.946 0 0 0-1.343-.545h-51.834a1.94 1.94 0 0 0-1.791 1.139 1.971 1.971 0 0 0 .448 2.127L476.127 541.1a1.8 1.8 0 0 0 1.343.593 2.1 2.1 0 0 0 1.393-.593l25.569-26.024a1.921 1.921 0 0 0 0-2.721z"
+                                                class="cls-2" transform="translate(123.162 60.682)"/>
+                                                <path id="Path_128"
+                                                d="M313.206 300.254a1.957 1.957 0 0 0-1.344-.545h-51.784a1.892 1.892 0 0 0-1.74 1.187 1.923 1.923 0 0 0 .4 2.079l155.15 153.668a1.793 1.793 0 0 0 1.343.594 1.986 1.986 0 0 0 .747 0 1.88 1.88 0 0 0 1.194-1.78v-51.009a1.928 1.928 0 0 0-.547-1.337z"
+                                                class="cls-2" transform="translate(211.268 60.683)"/>
+                                                <path id="Path_129"
+                                                d="M326.726 299.71h-44.373a1.893 1.893 0 0 0-1.741 1.139 1.971 1.971 0 0 0 .4 2.126l44.373 44.132a1.942 1.942 0 0 0 1.343.544h.746a1.88 1.88 0 0 0 1.195-1.781v-44.132a1.887 1.887 0 0 0-1.941-1.88"
+                                                class="cls-2" transform="translate(299.774 60.682)"/>
+                                                <path id="Path_130"
+                                                d="M393.965 393.386a1.8 1.8 0 0 0 1.343.594 2.187 2.187 0 0 0 1.293-.5l26.712-24.292a2.027 2.027 0 0 0 .648-1.336 1.976 1.976 0 0 0-.6-1.435L284.08 227.251a2.2 2.2 0 0 0-1.244-.544c-8.8-.594-18.8-1.237-29.249-1.237-7.71 0-15.62 0-23.33.743a1.89 1.89 0 0 0-1.642 1.236 1.923 1.923 0 0 0 .448 1.979z"
+                                                class="cls-2" transform="translate(93.3 -232.375)"/>
+                                                <path id="Path_131"
+                                                d="M353.082 330.307a1.8 1.8 0 0 0 1.343.594 2.2 2.2 0 0 0 1.293-.5l31.788-28.1a2.021 2.021 0 0 0 .645-1.435 1.825 1.825 0 0 0-.7-1.434 332.949 332.949 0 0 0-131.918-71.142 1.945 1.945 0 0 0-2.128.925 1.922 1.922 0 0 0 .288 2.292z"
+                                                class="cls-2" transform="translate(191.24 -221.442)"/>
+                                                <path id="Path_132"
+                                                d="M716.877 725.481a2.4 2.4 0 0 0-3.184 0c-126.046 97.2-305.117 85.942-417.852-26.271a314.18 314.18 0 0 1-26.365-415.584 2.317 2.317 0 0 0 0-3.118l-27.409-27.26a2.345 2.345 0 0 0-1.841-.693 2.4 2.4 0 0 0-1.741.891 356.167 356.167 0 0 0 28.32 474C395.573 855.513 600.28 867.61 743.391 755.609a2.22 2.22 0 0 0 .9-1.731 2.317 2.317 0 0 0-.7-1.831z"
+                                                class="cls-2" transform="translate(-173.052 -125.484)"/>
+                                                <path id="Path_133"
+                                                d="M287.176 605.53a241.053 241.053 0 0 1-25.668-313.568 2.415 2.415 0 0 0 0-3.068l-24.872-24.736a2.342 2.342 0 0 0-1.841-.693 2.59 2.59 0 0 0-1.791.94 280.866 280.866 0 0 0 26.636 368.214c99.643 99.1 257.343 110.388 370.225 26.491a2.565 2.565 0 0 0 .945-1.781 2.315 2.315 0 0 0-.7-1.83l-24.275-24.193a2.446 2.446 0 0 0-3.133-.248c-97.166 69.479-230.645 58.67-315.23-25.528"
+                                                class="cls-2" transform="translate(-113.051 -82.417)"/>
+                                                <path id="Path_134"
+                                                d="M495.434 537.772a2.348 2.348 0 0 0-2.934-.346 172.619 172.619 0 0 1-211.647-24.747 170.289 170.289 0 0 1-24.838-210.5 2.513 2.513 0 0 0-.348-2.968l-24.872-24.737a2.5 2.5 0 0 0-1.941-.693 2.34 2.34 0 0 0-1.74 1.039A210.3 210.3 0 0 0 253.1 542.057c71.82 71.429 184.447 82.263 268.7 25.845a2.525 2.525 0 0 0 1.095-1.731 2.469 2.469 0 0 0-.7-1.93z"
+                                                class="cls-2" transform="translate(-56.123 -41.721)"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="jobs-2021">
+                            <div class="web-container">
+                                <div class="top-heading">
+                                    <h5 class="v-view">
+                                        <span> At Freesia, we are always on the look-out for talented
+                                        individuals to join our growing team in Dubai. Apply now if you are experienced
+                                        in the construction industry.</span></h5>
+                                    <h3 class="v-view">
+                                        <span>LATEST JOBS</span></h3>
+                                </div>
+                                <div class="inner-color">
+                                    <h2 class="mb-3 web-light-text pb-3 v-view v-viewed">
+                                        <span>APPLY</span></h2>
+                                    <p>If you are interested in a career with us, please send your CV to hr@freesia.ae</p>
+                                    <div class="mCustomScrollbar _mCS_1">
+                                        <div class="latest-jobs">
+                                            <h3 class="mb-3 web-light-text pb-3 v-view">
+                                                <span>Engineering Supervisor</span>
+                                            </h3>
+                                            <ul>
+                                                <li class="web-font-light web-btngrey v-view"><img
+                                                    src="assets/svg/careers/location.svg" alt="">Dubai</li>
+                                                <li class="web-font-light web-btngrey v-view"><img
+                                                    src="assets/svg/careers/full-time.svg" alt="">Full Time</li>
+                                                <li class="web-font-light web-btngrey v-view"><img
+                                                    src="assets/svg/careers/work-experience.svg" alt="">02 - 03 years
+                                                Experience</li>
+                                            </ul>
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <p class="pb-4 web-font-light web-btngrey v-view">Engineering Supervisor
+                                                    required in Dubai</p>
+                                                </div>
+                                                <div class="col-md-4 text-right v-view">
+                                                    <a href="javascript:"
+                                                    class="btn web-btn web-btn-theme fadeInUp animate apply_now"
+                                                    data-animation="fadeInUp" data-duration="50" data-toggle="modal"
+                                                    data-target="#exampleModalCenter" id="6">
+                                                        <span>APPLY NOW</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="bottom-graybg"></section>
+                        <section class="project-in-mind">
                             <div class="web-container">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="banner-content">
-                                            <h5 class="mb-3">SPECIALIZED IN CONSTRUCTION, CONTRACTING &amp; MEP</h5>
-                                            <h1 class="mb-0">CAREERS</h1>
+                                        <div class="hover-color">&nbsp; </div>
+                                        <div class="hover-btn animate" data-animation="fadeInUp" data-duration="50">
+                                            <a
+                                            href="contact-us.html" class="text-white web-h5">LETS TALK</a>
+                                        </div>
+                                        <div class="project-content">
+                                            <h3 class="mb-4 text-center v-view">
+                                                <span>HAVE A PROJECT IN MIND?</span></h3>
+                                            <h2 class="text-center mb-5 v-view">
+                                                <span>GET IN TOUCH WITH US TODAY</span></h2>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="scroll-button"><a href="javascript:void()"
-                                        class="btn web-btn disable-link">SCROLL</a></div>
-                                <div class="hero-bottom-border">&nbsp;</div>
                             </div>
                         </section>
-                    </header>
-                    <div class="wrapper">
-                        <nav id="sidebar">
-                            <div></div>
-                            <div class="sidebar-header"><button id="dismiss" class="btn float-right"><svg
+                        <div class="wrapper">
+                            <nav id="sidebar">
+                                <div></div>
+                                <div class="sidebar-header">
+                                    <button id="dismiss" class="btn float-right">
+                                        <svg
                                         xmlns="http://www.w3.org/2000/svg" width="27.687" height="26.227"
                                         viewBox="0 0 27.687 26.227">
-                                        <defs>
-                                            <style>
-                                                .cls-sidebar {
-                                                    fill: none !important;
-                                                    stroke: #fff !important;
-                                                }
-                                            </style>
-                                        </defs>
-                                        <g id="Group_108" transform="translate(-1615.157 -201.136)">
-                                            <path id="Line_40" d="M27 0L0 25.5" class="cls-sidebar"
-                                                transform="translate(1615.5 201.5)" />
-                                            <path id="Line_41" d="M0 0L27 25.5" class="cls-sidebar"
-                                                transform="translate(1615.5 201.5)" />
-                                        </g>
-                                    </svg></button></div>
-                            <ul class="list-unstyled components">
-                                <li><a target="_self" href="index.html">Home</a></li>
-                                <li><a target="_self" href="about-us.html">About Us</a></li>
-                                <li><a target="_self" href="our-team.html">Our Team</a></li>
-                                <li><a target="_self" href="partners.html">Our Partners</a></li>
-                                <li><a target="_self" href="projects.html">Our Projects</a></li>
-                                <li><a target="_self" href="albums.html">Image Gallery</a></li>
-                                <li><a target="_self" href="careers.html">Careers</a></li>
-                                <li><a target="_self" href="contact-us.html">Contact Us</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="overlay"></div>
-                    <section class="half-g animate" data-animation="fadeInUp" data-duration="50">
-                        <div class="top-line">&nbsp;</div>
-                        <div class="row no-gutters">
-                            <div class="col-md-4">&nbsp;</div>
-                            <div class="col-md-8">
-                                <div class="logo-box text-center"><svg xmlns="http://www.w3.org/2000/svg" width="640"
-                                        height="713.607" viewBox="0 0 640 713.607">
-                                        <defs>
-                                            <style>
-                                                .cls-2 {
-                                                    fill: #fff
-                                                }
-                                            </style>
-                                        </defs>
-                                        <g id="Group_81" opacity="0.32" transform="translate(11.56 6.905)">
-                                            <path id="Path_124"
-                                                d="M410.246 439.776a2.144 2.144 0 0 0 1.393.544 1.747 1.747 0 0 0 1.243-.494l27.36-24.292a1.829 1.829 0 0 0 .646-1.385 1.776 1.776 0 0 0-.547-1.386L254.149 227.531a1.9 1.9 0 0 0-1.741-.494 274.674 274.674 0 0 0-41.288 11.428 1.833 1.833 0 0 0-1.194 1.385 1.972 1.972 0 0 0 .5 1.781z"
-                                                class="cls-2" transform="translate(19.265 -226.372)" />
-                                            <path id="Path_125"
-                                                d="M333.463 390.866a1.946 1.946 0 0 0 1.343.544h.6a155.959 155.959 0 0 1 43.128-7.323 1.941 1.941 0 0 0 1.741-1.187 2.022 2.022 0 0 0-.448-2.078L231.438 233.24a2.047 2.047 0 0 0-2.139-.4 214.261 214.261 0 0 0-33.578 18.56 1.928 1.928 0 0 0-.846 1.435 1.876 1.876 0 0 0 .548 1.484z"
-                                                class="cls-2" transform="translate(-40.4 -203.831)" />
-                                            <path id="Path_126"
-                                                d="M313.626 398.048a2.144 2.144 0 0 0 1.392.544 1.945 1.945 0 0 0 1.294-.495 149.146 149.146 0 0 1 28.454-21.868 1.977 1.977 0 0 0 .995-1.435 1.726 1.726 0 0 0-.548-1.583l-132.071-131.4a1.9 1.9 0 0 0-2.537 0 275.947 275.947 0 0 0-27.459 24.44 1.875 1.875 0 0 0-.6 1.385 1.779 1.779 0 0 0 .6 1.336z"
-                                                class="cls-2" transform="translate(-89.36 -169.802)" />
-                                            <path id="Path_127"
-                                                d="M291.128 300.254a1.946 1.946 0 0 0-1.343-.545h-51.834a1.94 1.94 0 0 0-1.791 1.139 1.971 1.971 0 0 0 .448 2.127L476.127 541.1a1.8 1.8 0 0 0 1.343.593 2.1 2.1 0 0 0 1.393-.593l25.569-26.024a1.921 1.921 0 0 0 0-2.721z"
-                                                class="cls-2" transform="translate(123.162 60.682)" />
-                                            <path id="Path_128"
-                                                d="M313.206 300.254a1.957 1.957 0 0 0-1.344-.545h-51.784a1.892 1.892 0 0 0-1.74 1.187 1.923 1.923 0 0 0 .4 2.079l155.15 153.668a1.793 1.793 0 0 0 1.343.594 1.986 1.986 0 0 0 .747 0 1.88 1.88 0 0 0 1.194-1.78v-51.009a1.928 1.928 0 0 0-.547-1.337z"
-                                                class="cls-2" transform="translate(211.268 60.683)" />
-                                            <path id="Path_129"
-                                                d="M326.726 299.71h-44.373a1.893 1.893 0 0 0-1.741 1.139 1.971 1.971 0 0 0 .4 2.126l44.373 44.132a1.942 1.942 0 0 0 1.343.544h.746a1.88 1.88 0 0 0 1.195-1.781v-44.132a1.887 1.887 0 0 0-1.941-1.88"
-                                                class="cls-2" transform="translate(299.774 60.682)" />
-                                            <path id="Path_130"
-                                                d="M393.965 393.386a1.8 1.8 0 0 0 1.343.594 2.187 2.187 0 0 0 1.293-.5l26.712-24.292a2.027 2.027 0 0 0 .648-1.336 1.976 1.976 0 0 0-.6-1.435L284.08 227.251a2.2 2.2 0 0 0-1.244-.544c-8.8-.594-18.8-1.237-29.249-1.237-7.71 0-15.62 0-23.33.743a1.89 1.89 0 0 0-1.642 1.236 1.923 1.923 0 0 0 .448 1.979z"
-                                                class="cls-2" transform="translate(93.3 -232.375)" />
-                                            <path id="Path_131"
-                                                d="M353.082 330.307a1.8 1.8 0 0 0 1.343.594 2.2 2.2 0 0 0 1.293-.5l31.788-28.1a2.021 2.021 0 0 0 .645-1.435 1.825 1.825 0 0 0-.7-1.434 332.949 332.949 0 0 0-131.918-71.142 1.945 1.945 0 0 0-2.128.925 1.922 1.922 0 0 0 .288 2.292z"
-                                                class="cls-2" transform="translate(191.24 -221.442)" />
-                                            <path id="Path_132"
-                                                d="M716.877 725.481a2.4 2.4 0 0 0-3.184 0c-126.046 97.2-305.117 85.942-417.852-26.271a314.18 314.18 0 0 1-26.365-415.584 2.317 2.317 0 0 0 0-3.118l-27.409-27.26a2.345 2.345 0 0 0-1.841-.693 2.4 2.4 0 0 0-1.741.891 356.167 356.167 0 0 0 28.32 474C395.573 855.513 600.28 867.61 743.391 755.609a2.22 2.22 0 0 0 .9-1.731 2.317 2.317 0 0 0-.7-1.831z"
-                                                class="cls-2" transform="translate(-173.052 -125.484)" />
-                                            <path id="Path_133"
-                                                d="M287.176 605.53a241.053 241.053 0 0 1-25.668-313.568 2.415 2.415 0 0 0 0-3.068l-24.872-24.736a2.342 2.342 0 0 0-1.841-.693 2.59 2.59 0 0 0-1.791.94 280.866 280.866 0 0 0 26.636 368.214c99.643 99.1 257.343 110.388 370.225 26.491a2.565 2.565 0 0 0 .945-1.781 2.315 2.315 0 0 0-.7-1.83l-24.275-24.193a2.446 2.446 0 0 0-3.133-.248c-97.166 69.479-230.645 58.67-315.23-25.528"
-                                                class="cls-2" transform="translate(-113.051 -82.417)" />
-                                            <path id="Path_134"
-                                                d="M495.434 537.772a2.348 2.348 0 0 0-2.934-.346 172.619 172.619 0 0 1-211.647-24.747 170.289 170.289 0 0 1-24.838-210.5 2.513 2.513 0 0 0-.348-2.968l-24.872-24.737a2.5 2.5 0 0 0-1.941-.693 2.34 2.34 0 0 0-1.74 1.039A210.3 210.3 0 0 0 253.1 542.057c71.82 71.429 184.447 82.263 268.7 25.845a2.525 2.525 0 0 0 1.095-1.731 2.469 2.469 0 0 0-.7-1.93z"
-                                                class="cls-2" transform="translate(-56.123 -41.721)" />
-                                        </g>
-                                    </svg></div>
-                            </div>
+                                            <defs>
+                                                <style>
+                                                    .cls-sidebar {
+                                                        fill: none !important;
+                                                        stroke: #fff !important;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g id="Group_108" transform="translate(-1615.157 -201.136)">
+                                                <path id="Line_40" d="M27 0L0 25.5" class="cls-sidebar"
+                                                transform="translate(1615.5 201.5)"/>
+                                                <path id="Line_41" d="M0 0L27 25.5" class="cls-sidebar"
+                                                transform="translate(1615.5 201.5)"/>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <ul class="list-unstyled components">
+                                    <li>
+                                        <a href="index.html" target="_self">
+                                            <span>Home</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us.html" target="_self">
+                                            <span>About Us</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="our-team.html" target="_self">
+                                            <span>Our Team</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="partners.html" target="_self">
+                                            <span>Our Partners</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="projects.html" target="_self">
+                                            <span>Our Projects</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="albums.html" target="_self">
+                                            <span>Image Gallery</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="careers.html" target="_self">
+                                            <span>Careers</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="contact-us.html" target="_self">
+                                            <span>Contact Us</span></a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-                    </section>
-                    <section class="jobs-2021">
-                        <div class="web-container">
-                            <div class="top-heading">
-                                <h5 class="v-view"><span> At Freesia, we are always on the look-out for talented
-                                        individuals to join our growing team in Dubai. Apply now if you are experienced
-                                        in the construction industry.</span></h5>
-                                <h3 class="v-view"><span>LATEST JOBS</span></h3>
-                            </div>
-                            <div class="inner-color">
-                                <h2 class="mb-3 web-light-text pb-3 v-view v-viewed"><span>APPLY</span></h2>
-                                <p>If you are interested in a career with us, please send your CV to hr@freesia.ae</p>
-                                <div class="mCustomScrollbar _mCS_1">
-                                    <div class="latest-jobs">
-                                        <h3 class="mb-3 web-light-text pb-3 v-view"><span>Engineering Supervisor</span>
-                                        </h3>
-                                        <ul>
-                                            <li class="web-font-light web-btngrey v-view"><img
-                                                    src="assets/svg/careers/location.svg" alt="">Dubai</li>
-                                            <li class="web-font-light web-btngrey v-view"><img
-                                                    src="assets/svg/careers/full-time.svg" alt="">Full Time</li>
-                                            <li class="web-font-light web-btngrey v-view"><img
-                                                    src="assets/svg/careers/work-experience.svg" alt="">02 - 03 years
-                                                Experience</li>
-                                        </ul>
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <p class="pb-4 web-font-light web-btngrey v-view">Engineering Supervisor
-                                                    required in Dubai</p>
-                                            </div>
-                                            <div class="col-md-4 text-right v-view"><a href="javascript:"
-                                                    class="btn web-btn web-btn-theme fadeInUp animate apply_now"
-                                                    data-animation="fadeInUp" data-duration="50" data-toggle="modal"
-                                                    data-target="#exampleModalCenter" id="6"><span>APPLY NOW</span></a>
-                                            </div>
+                        <div class="overlay"></div>
+                        <footer class="section-padtop-15 section-padbottom-15">
+                            <div class="web-container">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="footer-logo animate" data-animation="fadeInUp" data-duration="50">
+                                            <a
+                                            href="index.html"><img src="assets/images/logo-new-5.png" alt="" style="width: 100px; height: 60px; transform: scale(2.5)"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 align-self-center">
+                                        <p class="mb-0 web-light animate text-center" data-animation="fadeInUp"
+                                        data-duration="70">Copyright © 2023 Freesia Contracting. All Right Reserved.
+                                    </p>
+                                    </div>
+                                    <div class="col-lg-3 align-self-center">
+                                        <div class="float-lg-right">
+                                            <ul class="list-inline animate" data-animation="fadeInUp" data-duration="70">
+                                                <li class="list-inline-item">
+                                                    <a target="_self"
+                                                    href="terms-condition.html">Terms of Use &amp; Services</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a target="" href="javascript:">●</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a target="_self"
+                                                    href="privacy-policy.html">Privacy Policy</a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a target="_self"
+                                                        href="assets/files/Quality_Policy.pdf">Quality Policy</a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="bottom-graybg"></section>
-                    <section class="project-in-mind">
-                        <div class="web-container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="hover-color">&nbsp; </div>
-                                    <div class="hover-btn animate" data-animation="fadeInUp" data-duration="50"><a
-                                            href="contact-us.html" class="text-white web-h5">LETS TALK</a></div>
-                                    <div class="project-content">
-                                        <h3 class="mb-4 text-center v-view"><span>HAVE A PROJECT IN MIND?</span></h3>
-                                        <h2 class="text-center mb-5 v-view"><span>GET IN TOUCH WITH US TODAY</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="wrapper">
-                        <nav id="sidebar">
-                            <div></div>
-                            <div class="sidebar-header"><button id="dismiss" class="btn float-right"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="27.687" height="26.227"
-                                        viewBox="0 0 27.687 26.227">
-                                        <defs>
-                                            <style>
-                                                .cls-sidebar {
-                                                    fill: none !important;
-                                                    stroke: #fff !important;
-                                                }
-                                            </style>
-                                        </defs>
-                                        <g id="Group_108" transform="translate(-1615.157 -201.136)">
-                                            <path id="Line_40" d="M27 0L0 25.5" class="cls-sidebar"
-                                                transform="translate(1615.5 201.5)" />
-                                            <path id="Line_41" d="M0 0L27 25.5" class="cls-sidebar"
-                                                transform="translate(1615.5 201.5)" />
-                                        </g>
-                                    </svg></button></div>
-                            <ul class="list-unstyled components">
-                                <li><a href="index.html" target="_self"><span>Home</span></a></li>
-                                <li><a href="about-us.html" target="_self"><span>About Us</span></a></li>
-                                <li><a href="our-team.html" target="_self"><span>Our Team</span></a></li>
-                                <li><a href="partners.html" target="_self"><span>Our Partners</span></a></li>
-                                <li><a href="projects.html" target="_self"><span>Our Projects</span></a></li>
-                                <li><a href="albums.html" target="_self"><span>Image Gallery</span></a></li>
-                                <li><a href="careers.html" target="_self"><span>Careers</span></a></li>
-                                <li><a href="contact-us.html" target="_self"><span>Contact Us</span></a></li>
-                            </ul>
-                        </nav>
+                        </footer>
                     </div>
-                    <div class="overlay"></div>
-                    <footer class="section-padtop-15 section-padbottom-15">
-                        <div class="web-container">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <div class="footer-logo animate" data-animation="fadeInUp" data-duration="50"><a
-                                            href="index.html"><img src="assets/images/logo-new-5.png" alt="" style="width: 100px; height: 60px; transform: scale(2.5)"></a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 align-self-center">
-                                    <p class="mb-0 web-light animate text-center" data-animation="fadeInUp"
-                                        data-duration="70">Copyright © 2023 Freesia Contracting. All Right Reserved.
-                                    </p>
-                                </div>
-                                <div class="col-lg-3 align-self-center">
-                                    <div class="float-lg-right">
-                                        <ul class="list-inline animate" data-animation="fadeInUp" data-duration="70">
-                                            <li class="list-inline-item"><a target="_self"
-                                                    href="terms-condition.html">Terms of Use &amp; Services</a></li>
-                                            <li class="list-inline-item"><a target="" href="javascript:">●</a></li>
-                                            <li class="list-inline-item"><a target="_self"
-                                                    href="privacy-policy.html">Privacy Policy</a></li>
-                                                    <li class="list-inline-item"><a target="_self"
-                                                        href="assets/files/Quality_Policy.pdf">Quality Policy</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
                 </div>
             </div>
         </div>
-    </div>
-    <script> var vh = screen.height; var xi = document.getElementById("portrait-warnning"); if (vh < 450) { xi.style.display = 'block'; } else { xi.style.display = 'none'; }
-    </script>
-    <script src="assets/js/vendors/jquery.min.js"></script>
-    <script src="assets/sequence/js/sequence.js"></script>
-    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
-    <script src="assets/js/vendors/bootstrap.min.js"></script>
-    <script src="assets/js/vendors/popper.min.js"></script>
-    <script src="assets/js/vendors/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="assets/js/vendors/css_browser_selector.js"></script>
-    <script src="assets/js/vendors/jquery.inview.min.js"></script>
-    <script src="assets/js/vendors/form-validation.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
-    <div class="modal fade job-title" id="exampleModalCenter" tabindex="-1" role="dialog"
+        <script>
+            var vh = screen.height;
+            var xi = document.getElementById("portrait-warnning");
+            if (vh < 450) {
+                xi.style.display = 'block';
+            } else {
+                xi.style.display = 'none';
+            }
+        </script>
+        <script src="assets/js/vendors/jquery.min.js"></script>
+        <script src="assets/sequence/js/sequence.js"></script>
+        <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+        <script src="assets/js/vendors/bootstrap.min.js"></script>
+        <script src="assets/js/vendors/popper.min.js"></script>
+        <script src="assets/js/vendors/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/js/vendors/css_browser_selector.js"></script>
+        <script src="assets/js/vendors/jquery.inview.min.js"></script>
+        <script src="assets/js/vendors/form-validation.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+        <div class="modal fade job-title" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div id="overlay">
-                    <div class="cv-spinner"><span class="spinner"></span></div>
-                </div>
-                <div class="modal-header">
-                    <h2 class="modal-title" id="exampleModalLongTitle"><span>APPLY</span></h2><button type="button"
-                        class="close" data-dismiss="modal" aria-label="Close"><span
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div id="overlay">
+                        <div class="cv-spinner">
+                            <span class="spinner"></span></div>
+                    </div>
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLongTitle">
+                            <span>APPLY</span></h2>
+                        <button type="button"
+                        class="close" data-dismiss="modal" aria-label="Close">
+                            <span
                             aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <div id="alert"></div>
-                    <form id="contact-form" method="POST" action="https://www.gardinia.ae/application"
+                    </div>
+                    <div class="modal-body">
+                        <div id="alert"></div>
+                        <form id="contact-form" method="POST" action="https://www.gardinia.ae/application"
                         enctype="multipart/form-data"><input type="hidden" name="_token"
                             value="ktY8LipT1AAf0gfpcR6T1eNQT9Emf1sefHCrhTkC">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="row no-gutters animate" data-animation="fadeInUp" data-duration="10">
-                                    <div class="col-md-12"><label for="name">Your Full Name </label><input type="hidden"
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row no-gutters animate" data-animation="fadeInUp" data-duration="10">
+                                        <div class="col-md-12">
+                                            <label for="name">Your Full Name </label><input type="hidden"
                                             name="career_id" value="" class="form-control w-100 mt-2"
                                             placeholder=""><input type="text" id="name" name="name"
                                             class="form-control w-100 mt-2" placeholder="">
-                                        <div class="form-control-feedback form-text"></div>
-                                    </div>
-                                    <div class="col-md-12"><label for="number">Phone Number</label><input type="number"
+                                            <div class="form-control-feedback form-text"></div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="number">Phone Number</label><input type="number"
                                             id="phone" name="phone" class="form-control w-100 mt-2" placeholder=""
                                             onkeydown="limit(this);" onkeyup="limit(this);" maxlength="15">
-                                        <div class="form-control-feedback form-text"></div>
-                                    </div>
-                                    <div class="col-md-12"><label for="email">Your Email</label><input type="email"
+                                            <div class="form-control-feedback form-text"></div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="email">Your Email</label><input type="email"
                                             id="email" name="email" class="form-control w-100 mt-2" placeholder="">
-                                        <div class="form-control-feedback form-text"></div>
-                                    </div>
-                                    <div class="col-md-12"><label for="file">Upload Your Resume (.pdf, .docx,
+                                            <div class="form-control-feedback form-text"></div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="file">Upload Your Resume (.pdf, .docx,
                                             .doc)</label>
-                                        <div class="drag">
-                                            <ul>
-                                                <li><img src="assets/svg/careers/word-file.svg" alt=""></li>
-                                                <li>Drag it here or </li>
-                                                <li><input type="file" name="file" id="file"
-                                                        class="btn web-btn web-btn-theme w-100 mt-3" />
-                                                    <div class="form-control-feedback form-text"></div>
-                                                </li>
-                                            </ul><span class="file-size mt-3">File size should be 3MB </span>
+                                            <div class="drag">
+                                                <ul>
+                                                    <li><img src="assets/svg/careers/word-file.svg" alt=""></li>
+                                                    <li>Drag it here or </li>
+                                                    <li><input type="file" name="file" id="file"
+                                                        class="btn web-btn web-btn-theme w-100 mt-3"/>
+                                                        <div class="form-control-feedback form-text"></div>
+                                                    </li>
+                                                </ul>
+                                                <span class="file-size mt-3">File size should be 3MB </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row no-gutters animate" data-animation="fadeInUp" data-duration="10">
+                                        <div class="col-md-12">
+                                            <label for="message">Message</label>
+                                            <textarea name="message"
+                                            id="message" class="form-control w-100 mt-2 pt-3" rows="12"
+                                            placeholder=""></textarea>
+                                            <div class="form-control-feedback form-text"></div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button type="submit" id="submit"
+                                            class="btn web-btn web-btn-theme w-100 mt-4">
+                                                <span>APPLY</span></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="row no-gutters animate" data-animation="fadeInUp" data-duration="10">
-                                    <div class="col-md-12"><label for="message">Message</label><textarea name="message"
-                                            id="message" class="form-control w-100 mt-2 pt-3" rows="12"
-                                            placeholder=""></textarea>
-                                        <div class="form-control-feedback form-text"></div>
-                                    </div>
-                                    <div class="col-md-12"><button type="submit" id="submit"
-                                            class="btn web-btn web-btn-theme w-100 mt-4"><span>APPLY</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <style>
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
+        <style>
+            input::-webkit-inner-spin-button,
+            input::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
 
-        input[type=number] {
-            -moz-appearance: textfield;
-        }
-    </style>
-    <script
-        type="text/javascript">function limit(element) { var max_chars = 15; if (element.value.length > max_chars) { element.value = element.value.substr(0, max_chars); } } jQuery('.job-title .modal-header button.close').click(function () { jQuery('.form-control-feedback.form-text').remove(); $("#contact-form").trigger("reset"); }); $('.apply_now').click(function (frm) { var career_id = $(this).attr('id'); $('input[name=career_id]').val(career_id); }); var frm = $('#contact-form'); $.validator.addMethod('filesize', function (value, element, param) { return this.optional(element) || (element.files[0].size <= param) }, 'File size must be less than {0} MB'); $.validator.addMethod('ext', function (value, element, param) { var ext = element.files[0].name.split('.').pop(); return this.optional(element) || (ext == 'pdf') || (ext == 'docx') }, 'File Extension must be pdf or docx '); $('#submit').click(function (e) { $("#overlay").fadeIn(300); e.preventDefault(); var fdata = frm[0]; var formData = new FormData(fdata); $.ajax({ url: frm.attr('action'), type: frm.attr('method'), data: formData, beforeSend: function () { $("#overlay").fadeIn(300); }, complete: function () { setTimeout(function () { $("#overlay").fadeOut(300); }, 500); }, async: false, success: function (data) { console.log(data); if (data.success) { jQuery('.form-control-feedback').remove(); $('#alert').html(''); $('#alert').append('<div class="alert alert-success" role="alert">Your Resume has been Submitted Successfully !</div>'); setTimeout(function () { $(".alert").alert('close'); }, 3000); frm[0].reset(); } else if (data.error) { jQuery('.form-control-feedback').remove(); jQuery('.form-group').removeClass('has-danger'); jQuery.each(data.error, function (k, v) { console.log(v[0]); jQuery('#' + k).after('<div class="form-control-feedback form-text">' + v[0] + '</div>'); jQuery('#' + k).closest('.form-group').addClass('has-danger') }); } }, cache: false, contentType: false, processData: false }); }); 
-    </script>
-</body>
+            input[type=number] {
+                -moz-appearance: textfield;
+            }
+        </style>
+        <script
+        type="text/javascript">
+            function limit(element) {
+                var max_chars = 15;
+                if (element.value.length > max_chars) {
+                    element.value = element
+                        .value
+                        .substr(0, max_chars);
+                }
+            }
+            jQuery('.job-title .modal-header button.close').click(function () {
+                jQuery('.form-control-feedback.form-text').remove();
+                $("#contact-form").trigger("reset");
+            });
+            $('.apply_now').click(function (frm) {
+                var career_id = $(this).attr('id');
+                $('input[name=career_id]').val(career_id);
+            });
+            var frm = $('#contact-form');
+            $
+                .validator
+                .addMethod('filesize', function (value, element, param) {
+                    return this.optional(element) || (element.files[0].size <= param)
+                }, 'File size must be less than {0} MB');
+            $
+                .validator
+                .addMethod('ext', function (value, element, param) {
+                    var ext = element
+                        .files[0]
+                        .name
+                        .split('.')
+                        .pop();
+                    return this.optional(element) || (ext == 'pdf') || (ext == 'docx')
+                }, 'File Extension must be pdf or docx ');
+            $('#submit').click(function (e) {
+                $("#overlay").fadeIn(300);
+                e.preventDefault();
+                var fdata = frm[0];
+                var formData = new FormData(fdata);
+                $.ajax({
+                    url: frm.attr('action'),
+                    type: frm.attr('method'),
+                    data: formData,
+                    beforeSend: function () {
+                        $("#overlay").fadeIn(300);
+                    },
+                    complete: function () {
+                        setTimeout(function () {
+                            $("#overlay").fadeOut(300);
+                        }, 500);
+                    },
+                    async: false,
+                    success: function (data) {
+                        console.log(data);
+                        if (data.success) {
+                            jQuery('.form-control-feedback').remove();
+                            $('#alert').html('');
+                            $('#alert').append('<div class="alert alert-success" role="alert">Your Resume has been Submitted Successfully !</div>');
+                            setTimeout(function () {
+                                $(".alert").alert('close');
+                            }, 3000);
+                            frm[0].reset();
+                        } else if (data.error) {
+                            jQuery('.form-control-feedback').remove();
+                            jQuery('.form-group').removeClass('has-danger');
+                            jQuery.each(data.error, function (k, v) {
+                                console.log(v[0]);
+                                jQuery('#' + k).after('<div class="form-control-feedback form-text">' + v[0] + '</div>');
+                                jQuery('#' + k)
+                                    .closest('.form-group')
+                                    .addClass('has-danger')
+                            });
+                        }
+                    },
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
+            });
+        </script>
+    </body>
 
 </html>
