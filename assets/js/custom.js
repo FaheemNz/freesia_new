@@ -300,7 +300,9 @@ $(document).ready(function () {
     .addClass("mobile-norev");
 });
 
-$('.iframeButton').on('click', function(){
+$(document).on('click', '.iframeButton', function(){
+  console.log('IFrame...');
+
   let thePdfIframe = document.getElementById('iframeContainer');
 
   thePdfIframe.style.display = thePdfIframe.style.display === 'block' 
