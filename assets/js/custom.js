@@ -298,4 +298,12 @@ $(document).ready(function () {
   $(".services-content.section-bg-themegrey")
     .parentsUntil("section")
     .addClass("mobile-norev");
+
+  $('.iframeButton').on('click', function(){
+    let thePdfIframe = document.getElementById('iframeContainer');
+
+    thePdfIframe.style.display = thePdfIframe.style.display === 'block' 
+      ? 'none' 
+      : 'block';
+  });
 });
