@@ -303,9 +303,5 @@ $(document).ready(function () {
 $(document).on('click', '.iframeButton', function(){
   console.log('IFrame...');
 
-  let thePdfIframe = document.getElementById('iframeContainer');
-
-  thePdfIframe.style.display = thePdfIframe.style.display === 'block' 
-    ? 'none' 
-    : 'block';
+  $('#iframeContainer').toggle();
 });
