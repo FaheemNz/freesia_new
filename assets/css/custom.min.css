@@ -45,7 +45,7 @@
     transition: all .2s ease-in-out;
   }
 
-#topheader img {
+#topheader img, .footer-logo img {
     transform: none !important;
     width: 130px !important;
     height: 70px !important;
