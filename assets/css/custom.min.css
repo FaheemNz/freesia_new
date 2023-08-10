@@ -47,6 +47,6 @@
 
 #topheader img {
     transform: none !important;
-    width: 120px;
-    height: 60px;
+    width: 130px !important;
+    height: 70px !important;
 }
