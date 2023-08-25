@@ -47,7 +47,7 @@
 
 #topheader img, .footer-logo img {
     transform: 0 !important;
-    width: 100px !important;
-    height: 40px !important;
+    width: 160px !important;
+    height: 50px !important;
     margin-top: 6px
 }
