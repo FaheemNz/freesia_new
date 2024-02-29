@@ -51,3 +51,8 @@
     height: 40px !important;
     margin-top: 10px
 }
+
+.navbar-image img {
+    background-blend-mode: darken;
+    filter: brightness(80%)
+}
