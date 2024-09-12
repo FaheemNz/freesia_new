@@ -1,0 +1,369 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Our Team - Freesia{% endblock %}
+
+{% block body %}
+    <style>
+        .page_speed_114109047 {
+            display: none;
+        }
+
+        .page_speed_592488683 {
+            background-image: url("storage/196/team-banner.jpg");
+        }
+    </style>
+    
+    <!-- Read More Modal to Show Details -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="readMore__Modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="readMore__Title"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p id="readMore__Details"></p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!-- End -->
+    <div class="app" id="app" data-v-page="home-page" data-v-pageAjax-name="home-page">
+                <div class="scroll home-page" id="scroll">
+                    <div class="scroll__outer">
+                        <header class="innerpages page_speed_592488683">
+                            <div class="topbar for-mobile-show" id="for-mobile-show">
+                                <div class="web-container">
+                                    <nav class="navbar navbar-expand-xl navbar-light">
+                                        <a class="navbar-brand animate w-50"
+                                        data-animation="fadeInLeft" data-duration="30" href="index.html"><img
+                                            src="/images/Freesia_Log_New.png" alt="" class="w-100"></a>
+                                        <ul class="navbar-nav ml-auto animate" data-animation="fadeInRight"
+                                        data-duration="30">
+                                            <li class="nav-item">
+                                                <a href="javascript:void()" class="nav-link"
+                                                id="sidebarCollapse">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="41.5" height="28.725" viewBox="0 0 41.5 28.725">
+                                                        <g id="Group_20" data-name="Group 20"
+                                                        transform="translate(-1740 -74)">
+                                                            <line id="Line_1" data-name="Line 1" x2="40.5"
+                                                            transform="translate(1740.5 74.5)" fill="none"
+                                                            stroke="#fefefe" stroke-linecap="round" stroke-width="1"/>
+                                                            <line id="Line_2" data-name="Line 2" x2="40.5"
+                                                            transform="translate(1740.5 88.363)" fill="none"
+                                                            stroke="#fefefe" stroke-linecap="round" stroke-width="1"/>
+                                                            <line id="Line_3" data-name="Line 3" x2="40.5"
+                                                            transform="translate(1740.5 102.225)" fill="none"
+                                                            stroke="#fefefe" stroke-linecap="round" stroke-width="1"/>
+                                                        </g>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <section class="hero-banner">
+                                <div class="web-container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="banner-content">
+                                                <h5 class="mb-3">SPECIALIZED IN MEP WORKS</h5>
+                                                <h1 class="mb-0">OUR TEAM</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="scroll-button">
+                                        <a href="javascript:void()"
+                                        class="btn web-btn disable-link">Scroll</a>
+                                    </div>
+                                    <div class="hero-bottom-border">&nbsp;</div>
+                                </div>
+                            </section>
+                        </header>
+                        <section class="working-block animate" data-animation="fadeInUp" data-duration="50">
+                            <div class="web-container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-8">
+                                        <div class="text-center">
+                                            <h3 class="web-light-text mb-4">At FREESIA, we have a team of over 2500 qualified
+                                            and experienced individuals who are dedicated and passionate about their
+                                            work.</h3>
+                                            <p class="web-light-text mb-0">From engineers to project managers, we continuously strive to go the extra mile to meet and
+                                            exceed expectations and set new benchmarks in the industry for quality,
+                                            cost-efficiency and punctual delivery across all our projects.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-line">&nbsp;</div>
+                        </section>
+                        <section class="team-profile section-padtop-50 section-padbottom-50">
+                            <div class="web-container">
+                                <div class="row justify-content-between">
+                                    <div class="col-md-5 align-self-center">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <h5 class="mb-1 web-grey text-uppercase">MEET OUR Chief Development Officer</h5>
+                                            <h2 class="mb-3 web-grey">Mohamed Ragheb Hussein</h2>
+                                            <p>With over 20 years experience in the construction industry, Mohamed plays a lead role in developing the project vision and concept and project managing the entire process from inception through to delivery and handover.  A seasoned professional in the effective project management of large master-planned communities and developments, Mohamed leads Freesia's planning and design processes, resource management and sustainability objectives.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                            <img src="{{ asset('images/Ragheb.jpg') }}" alt="" class="obj-cover"></div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between">
+                                    <div class="col-md-5 align-self-center">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <h5 class="mb-1 web-grey text-uppercase">MEET OUR Deputy – Chief Development Officer</h5>
+                                            <h2 class="mb-3 web-grey">Sumit S. Nair</h2>
+                                            <p>He has extensive and exhaustive hands-on knowledge and possesses 22+ yrs. of experience with latest 
+                                                hi-tech innovations and methods in construction management and engineering. 
+                                                He is managing overall company operations and has inculcated and imbibed inspiring leadership founding 
+                                                and leading this organization. The MEP Division under his leadership and direction has been rapidly improving 
+                                                with unparallel highest quality standards and timely completion of projects, ensuring that the company's and 
+                                                its end users interests and expectations are met.</p>
+                                            <p>He have exceled in Bachelor of Technology in Mechanical Engineering, is a Gold Medalist in Master of Business Administration, PMP certified and is a LEED Accredited Professional in 3 major USGBC rating systems</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                            <img src="{{ asset('images/gm_image.jpeg') }}" alt="" class="obj-cover"></div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between">
+                                    <div class="col-md-5 align-self-center">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <h5 class="mb-1 web-grey text-uppercase">General Manager</h5>
+                                            <h2 class="mb-3 web-grey">AWNI VICTOR MOCATTASH</h2>
+                                            <p>Dynamic Senior MEP Management Professional with over 32 years of extensive experience leading technical engineering initiatives and diverse practical proficiency throughout the field and projects. Solid management capabilities with a consistent track record of anticipating the consequences of new designs, initiating solutions, and completing tasks to strict specifications within the stipulated time.
+Highly regarded for delivery of high-profile Mechanical, Electrical, and Plumbing (MEP) projects in sectors including Hotels, Residential, Commercial, and Industrial. Capable of impacting businesses and sustaining competitiveness using extensive knowledge of formal project methodologies, well-developed engineering skills, and high-level site planning, budgetary control, quality control, sustainable development, value engineering, site management, HSEQ, risk management, scheduling, and leadership.
+Documented record of strong and decisive leadership in managing multi-disciplinary work. </p> <p> Extensive experience in managing work from development to delivery encompassing planning, monitoring, controlling phases of the project lifecycle, overall inter-discipline coordination, administration, and resource planning. 
+Experienced in building and developing trusted relationships with key project stakeholders, including subcontractors, clients, internal teams, and local regulatory organizations Characterized as an efficient team leader and player, exercising cross-functional team coordination, combining communication and problem-solving skills with analytical and leadership capabilities, and experienced in claims negotiations & settlement.
+Mr. Awni holds Bachelor of Engineering degree in Electrical engineering and certified on (FIDIC, PMP, IOSH & Essential Management Skills)
+</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                            <img src="{{ asset('images/Awni_New.jpg') }}" alt="" class="obj-cover"></div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between">
+                                    <div class="col-md-5 align-self-center">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <h5 class="mb-1 web-grey text-uppercase">Operations Director </h5>
+                                            <h2 class="mb-3 web-grey">Kamal Subhi Shadid</h2>
+                                            <p>A highly competent and self-motivated with strong design background offering more than 20 years’ Experience in MEP projects Management, Construction, Coordination for the high scale building projects in UAE, technically strong, assertive, and good communicator with proven ability to engage team and stakeholders on projects priorities to security scheduled deliveries on the time.
+In-depth technical knowledge and an expertise in executing MEP projects which include performing all necessary engineering calculations, specifications and drawings associated with the sizing and specification of engineered HVAC, refrigeration and plumbing systems, Gas system, electrical supervising Projects activities till final commissioning
+</p><p>Projects Management: Understanding project and client requirements, designing the various systems involved, detail engineering of the systems with drawings and bill of material, planning and scheduling of various activities, including budgeting and putting efficient workflows in place to maximize the company’s productivity and performance.
+Very Good understanding of project planning tools, detailing, engineering and civil technical specifications, material requirement and cost estimation techniques and project management principles.
+Recognized as a hands-on, proactive professional who can rapidly identify problems, formulate tactical plans, initiate change, and implement effective programs in challenging and diverse environments
+</p><p>Excellent interpersonal, leadership and communication skills, with an ability to work in highly diverse environments with people from varied backgrounds.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                            <img src="{{ asset('images/Our_Team_Kamal.png') }}" alt="" class="obj-cover"></div>
+                                    </div>
+                                </div>
+                                
+                                <br /> <br />
+                                
+                                <div class="row justify-content-between team-image-row">
+                                    <div class="col-md-3">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                                <img src="{{ asset('images/Image_Waleed_New.jpeg') }}" alt="" class="obj-cover">
+                                            </div>
+                                            <br />
+                                            <h5 class="mb-1 web-grey text-uppercase">Senior QA/QC Manager - MEP</h5>
+                                            <h5 class="mb-3 web-grey">Walid Toufic AlSarady</h5>
+                                            <button type="button" class="btn web-btn web-btn-theme animate" onclick="viewMemberDetails('Walid Toufic AlSarady')">View Details</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                                <img src="{{ asset('images/Our_Team_Shahin.jpg') }}" alt="" class="obj-cover">
+                                            </div>
+                                            <br />
+                                            <h5 class="mb-1 web-grey text-uppercase text-truncate">TECHNICAL MANAGER</h5>
+                                            <h5 class="mb-3 web-grey">Shahin Mohamed</h5>
+                                            <button type="button" class="btn web-btn web-btn-theme animate" onclick="viewMemberDetails('Shahin Mohamed')">View Details</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                                <img src="{{ asset('images/New_Image_1.png') }}" alt="" class="obj-cover">
+                                            </div>
+                                            <br />
+                                            <h5 class="mb-1 web-grey text-uppercase text-truncate">Facility Manager</h5>
+                                            <h5 class="mb-3 web-grey">Amro Farouk Elkahki</h5>
+                                            <button type="button" class="btn web-btn web-btn-theme animate" onclick="viewMemberDetails('Amro Farouk Elkahki')">View Details</button>
+                                        </div>
+                                    </div>
+			            <div class="col-md-3"></div>
+                                </div>
+
+                                <!-- Second Row Images -->
+                                <div class="row justify-content-between team-image-row">
+                                    <div class="col-md-3">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                                <img src="{{ asset('images/Our_Team_Syed.jpg') }}" alt="" class="obj-cover">
+                                            </div>
+                                            <br />
+                                            <h5 class="mb-1 web-grey text-uppercase">PLANNING MANAGER</h5>
+                                            <h5 class="mb-3 web-grey">Syed Mujtaba</h5>
+                                            <button type="button" class="btn web-btn web-btn-theme animate" onclick="viewMemberDetails('Syed Mujtaba')">View Details</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                                <img src="{{ asset('images/New_Image_2.png') }}" alt="" class="obj-cover">
+                                            </div>
+                                            <br />
+                                            <h5 class="mb-1 web-grey text-uppercase">PLANNING MANAGER</h5>
+                                            <h5 class="mb-3 web-grey">Rupam Roy</h5>
+                                            <button type="button" class="btn web-btn web-btn-theme animate" onclick="viewMemberDetails('Rupam Roy')">View Details</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                                <img src="{{ asset('images/Our_Team_Hafez.jpg') }}" alt="" class="obj-cover">
+                                            </div>
+                                            <br />
+                                            <h5 class="mb-1 web-grey text-uppercase">SENIOR MANAGER FIRE DIVISION</h5>
+                                            <h5 class="mb-3 web-grey">Hafez Sandouqa</h5>
+                                            <button type="button" class="btn web-btn web-btn-theme animate" onclick="viewMemberDetails('Hafez Sandouqa')">View Details</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                                <img src="{{ asset('images/New_Image_4.png') }}" alt="" class="obj-cover">
+                                            </div>
+                                            <br />
+                                            <h5 class="mb-1 web-grey text-uppercase">SENIOR MANAGER ELV DIVISION</h5>
+                                            <h5 class="mb-3 web-grey">Pradyumna Kumar Sahoo</h5>
+                                            <button type="button" class="btn web-btn web-btn-theme animate" onclick="viewMemberDetails('Pradyumna Kumar Sahoo')">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End -->
+                                
+                                <div class="row justify-content-between team-image-row">
+                                    <div class="col-md-3">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                                <img src="{{ asset('images/Our_Team_Hamza.jpg') }}" alt="" class="obj-cover">
+                                            </div>
+                                            <br />
+                                            <h5 class="mb-1 web-grey text-uppercase">Resource Manager</h5>
+                                            <h5 class="mb-3 web-grey">Syed hamza</h5>
+                                            <button type="button" class="btn web-btn web-btn-theme animate" onclick="viewMemberDetails('Syed hamza')">View Details</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                                <img src="{{ asset('images/Image_11.jpg') }}" alt="Freesia | Aziz Developments" class="obj-cover" />
+                                            </div>
+                                            <br />
+                                            <h5 class="mb-1 web-grey text-uppercase">MEP Projects Director</h5>
+                                            <h5 class="mb-3 web-grey">Ajith Jacob</h5>
+                                            <button type="button" class="btn web-btn web-btn-theme animate" onclick="viewMemberDetails('Ajith Jacob')">View Details</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                                <img src="{{ asset('images/Image_22.png') }}" alt="Freesia | Aziz Developments" class="obj-cover" />
+                                            </div>
+                                            <br />
+                                            <h5 class="mb-1 web-grey text-uppercase">MEP Projects Director</h5>
+                                            <h5 class="mb-3 web-grey">Marwan Raslan</h5>
+                                            <button type="button" class="btn web-btn web-btn-theme animate" onclick="viewMemberDetails('Marwan Raslan')">View Details</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                            <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                                <img src="{{ asset('images/Image_New_212.png') }}" alt="Freesia | Aziz Developments" class="obj-cover" />
+                                            </div>
+                                            <br />
+                                            <h5 class="mb-1 web-grey text-uppercase text-truncate">MEP Senior Project Director - Burj Azizi</h5>
+                                            <h5 class="mb-3 web-grey">Satish G Dandekar</h5>
+                                            <button type="button" class="btn web-btn web-btn-theme animate" onclick="viewMemberDetails('Santish Dandekar')">View Details</button>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row justify-content-between team-image-row">
+                                <div class="col-md-3">
+                                    <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                        <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                            <img src="{{ asset('images/Image_New_213.png') }}" alt="Freesia | Aziz Developments" class="obj-cover" />
+                                        </div>
+                                        <br />
+                                        <h5 class="mb-1 web-grey text-uppercase text-truncate">MEP Project Director</h5>
+                                        <h5 class="mb-3 web-grey">Mahmoud Legha</h5>
+                                        <button type="button" class="btn web-btn web-btn-theme animate" onclick="viewMemberDetails('Mahmoud Legha')">View Details</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="member-detail animate" data-animation="fadeInLeft" data-duration="50">
+                                        <div class="member-picture animate" data-animation="fadeInRight" data-duration="50">
+                                            <img src="{{ asset('images/Pramod_Bhag.jpg') }}" alt="Freesia | Aziz Developments" class="obj-cover" />
+                                        </div>
+                                        <br />
+                                        <h5 class="mb-1 web-grey text-uppercase text-truncate">SR. Manager – HV Division</h5>
+                                        <h5 class="mb-3 web-grey">Pramod Kumar Bhardwaj</h5>
+                                        <button type="button" class="btn web-btn web-btn-theme animate" onclick="viewMemberDetails('Pramod Kumar Bhardwaj')">View Details</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3"></div><div class="col-md-3"></div>
+                            </div>
+                        </section>
+                        
+<script>
+function viewMemberDetails(name){
+                if( ! name ){
+                    return;
+                }
+
+                let details = {
+                   "Walid Toufic AlSarady": "With over 20 years experience in The Quality Assurance and Quality Control (QA&QC) Management, Mr. Walid plays a lead role in Implementing and continue improving the company Quality Management system (QMS) and entire process from inception through to delivery and handover. The Quality Assurance and Quality Control (QA&QC) Manager oversees the facility's strategies, objectives, and operational status to ensure high quality processes and delivery of the projects. Mr. Walid holds a Bachelor of Engineering degree in Electronics and Electrical engineering. Also certified as internal QMS Lead Auditor for ISO 9001:2015.",
+                   "Mohamed Mahmoud Salem": "Over 24 years' experience in Mena Region (UAE, KSA, Qatar, Oman, Egypt and Cyprus EU) with comprehensive experience in Tendering, Proposals, Commercial, estimation, procurement, material/bid/supplier evaluation, cost control, claims, variations, contract, prequalification, team management and assess /mitigate risk on terms & conditions to create successful Technical, commercial & contractual PO/ bid/ project. -Diversified professional experiences in negotiating and administering international & domestic tender/project management activities including track record in profitable delivery; ensuring that project is completed on time, on budget, to high standards and also develop excellent relationship with client. Mr. Salem is highly experienced and proficient in leading teams, emphasizing effective teamwork and achieving operational excellence. He has a proven track record of optimizing processes to enhance efficiency and generate significant cost savings. Additionally, he is a skilled communicator, adept at building strong relationships and fostering effective interpersonal connections. His analytical mindset, coupled with strong problem-solving abilities, allows him to tackle complex challenges successfully. Furthermore, he possesses exceptional organizational skills, ensuring seamless coordination and execution of tasks. Mr. Salem holds a Bachelor of Engineering degree in Mechanical and has completed a Post Graduate Master in Business Administration.",
+                    "Shahin Mohamed": "Total 27+ Years of experience in UAE Building services industry with experience in MEP Technical Management, MEP building services designing, MEP Coordination, DLP Management, Site supervision, Review Technical Submittals / Shop & Design drawings, MEP Space planning, Site surveys for expansion Feasibility Studies, Site Inspections, Authority coordination, CAD & BIM Office Management, Project Closeout management, Construction Project Management, Testing & Commissioning Management, for leading National & Multinational Consultants, Developers & Contractors in UAE.",
+                    "Amro Farouk Elkahki": "Established Professional credibility for over 20' Years (UAE work experience) as Factory Manager specialized in manufacturing all the HVAC Appliances, Modular fabrication, and installation. Mr. Amro Familiarity with industry-standard equipment and technical expertise. Also had a pure knowledge into safety, quality, productivity, and inventory process. In additional his experience extended with high professional companies like Faisal Jasim group, Arabian Thermal Air International, rabid cool and international industrial supply.",
+                    "Syed Mujtaba": "Established Professional credibility for over 18 Years (UAE work experience) as Project Management Professional with Mechanical engineering Degree & MSc Project management degree pursuer (British university in Dubai) Having expertise in Planning / Execution & cost controlling in large scale MEP construction project with core competencies in (Project plans using software Oracle Primavera P6, Project scheduling, Resource planning and Manpower Analysis, Delay Analysis , Cost Controlling, Risk Management, Productivity Analysis / KPI's Reporting, MEP Work Progress Reports with weekly Dashboards/Presentation, EOT Claim / Contract Management) Member of Sound Contract Administration (SCA Alumni, Dubai, UAE)",
+                    "Rupam Roy": "A Planning and project management professional with an Electrical Engineering degree, PMP. Highly motivated, dynamic, efficient, and result in oriented project management professional with over 25 years of insightful experience in executing large Green & Brownfield Airport projects, Skyscrapers, Mid-rise Apartment Complexes, Luxury Villas and Mansions, Residential & Commercial Buildings, Hospitals, Oil & Gas and Petrochemical projects, Power Plant, Hotels, District Cooling projects, Infrastructure (road, flyover, bridge) projects",
+                    "Hafez Sandouqa": "Self-motivated, peak-performing professional with 18 years of progressive supervisory experience in all phases of the Fire protection/Life Safety system industry. Effective problem solver who enjoys the challenge of achieving goals and accomplishing objectives; career history of consistent advancement based on achievements and motivational tactics. Reputation for taking technical, complex projects from inception to completion. Ability to streamline procedures that improve safety levels, productivity, and control costs through expertise",
+                    "Pradyumna Kumar Sahoo": "With over 16 years of hands-on experience in ELV Systems for System Integration Companies in both India and the UAE, Pradyumna Kumar Sahoo is widely recognized for his exceptional proficiency in Team Management, Project Management, Operations Management, and Finance Management. Holding an Engineering, MBA certificate in Electrical & Electronics and Marketing & Finance respectively and being a certified Project Management Professional (PMP®), he adeptly leads teams and oversees projects from inception to completion, ensuring flawless integration and optimal performance of ELV systems. Pradyumna Kumar Sahoo's extensive network within the ELV Integration Industry, including key contacts with Consultants, Suppliers, and Local Authorities, facilitates smooth project handovers and fosters effective collaboration. With a unique blend of technical expertise and business acumen, his commitment to excellence and sustainability.",
+                    "Syed hamza": "With Over 17+ years of Experience in HR & Administration specially in Projects Operations. Mr. Hamza is well organized, reliable professional with a strong proven track gained from Engineering & Construction Industry. He holds redefined relationship building skills and experience working collaboratively with colleagues, leaders for the smooth projects resource management. Mr. Syed Hamza has done Bachelor of Law and MBA with CHRM, certified Human Resource professional.",
+                    "Ajith Jacob": "Mr Ajith Jacob is a result-oriented professional with over 32 years of rich experience in Building Services & Infrastructural Development Projects in the MENA region. A strategic planner with expertise in planning, executing and spearheading construction & maintenance projects, involving Management, Budgeting, Design, Engineering, Procurement, Resource and Administration, with a flair for adopting modern methodologies in compliance with Quality & Safety Standards, ensuring high end-user satisfaction. Mr Ajith is holder of Bachelor of Engineering degree in Electrical and has done Post Graduate Diploma in Business Administration. He also holds NEBOSH IGC certificate in Safety.",
+                    "Marwan Raslan": "Successful high-performing director with more than 30 years of experience in MEP work , demonstrated hands-on experience in managing multiple complex and challenging projects through effective strategy and planning. His area of expertise includes delivering projects in hospitality, multi-use commercial, residential, and retail complexes, high-rise and low-rise buildings. Throughout his career, he was able to develop the proper skillset to regularly meet and exceed performance targets and clients’ expectations, decrease project cost and time through value engineering, constructability reviews, proper planning, and site management, while building and maintaining strong relationships.",
+                    "Satish Dandekar": "Over 45 Years of extensive experience in Leading MEP Projects for various complex facilities such as Nuclear Establishments, Hospitals, Defense Establishments, Research Facilities, Underground Metro Stations, Tall Structures, Offshore and Onshore Oil Installations, High End Hotels, etc. Committed to deliver with excellence all the Projects with thorough experience from different countries and ensure to strengthen the team to perform at its highest level.",
+                    "Mahmoud Legha": "Mr Mahmoud Legha is extensive experience with over 26 years of MEP experience in Residential, Commercial Building, High-rise Building, Multi-Use Complex, Specialized Complex such as Hotels, Shopping mall, Warehouse & Infrastructural Works. High expertise in planning, executing and spearheading construction & maintenance projects, involving Management, Budgeting, Design, Engineering, Facilities Management, Procurement, insuring of compliance with Quality & Safety Standards. Mr Mahmoud is holder of Master of Sciences degree in Electrical Power Engineering from Kaunas University of Technology, Lithuania, Europe.",
+                    "Pramod Kumar Bhardwaj": "Mr. Pramod has brought over 35 years of hands-on experience in High Voltage Transmission & Distribution Industry while working previously with stalwarts of industry viz. ABB, SIEMENS, L & T, Sterling and Wilson, etc., delivering world’s latest technologies in Power, Utilities, Oil & Gas, Solar Power Plant and renewable energy sector. He is holding degree in Electrical Engineering and Diploma in financial management. He is having expertise and approval for execution up to 400 KV, EHV Substation Project for TRANSCO (Abu Dhabi), DEWA (Dubai), GASCO (Abu Dhabi), AADC (Al Ain) and SECO (Saudi). He has mastered the art of achieving the targets in the given time frame & cost maintaining excellent leadership and interpersonal relationship."
+                };
+ 
+                $('#readMore__Details').text( details[name] );
+
+                $('#readMore__Modal').modal('show');
+            }
+</script>
+{% endblock %}

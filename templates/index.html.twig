@@ -1,0 +1,342 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Freesia{% endblock %}
+
+{% block body %}
+    <div class="app" id="app" data-v-page="home-page" data-v-pageAjax-name="home-page">
+            <div class="scroll home-page" id="scroll">
+                <div class="scroll__outer">
+                    <header class="page_speed_621827620">
+                        <section class="hero-content" style="height: 100vh">
+                            <div class="topbar for-mobile-show" id="for-mobile-show">
+                                    <div class="web-container">
+                                        <nav class="navbar navbar-expand-xl navbar-light"><a class="navbar-brand animate w-50"
+                                                data-animation="fadeInLeft" data-duration="30" href="index.html"><img
+                                                    src="{{ asset('images/Freesia_Log_New.png') }} " alt="" class="w-100"></a>
+                                            <ul class="navbar-nav ml-auto animate" data-animation="fadeInRight"
+                                                data-duration="30">
+                                                <li class="nav-item"><a href="javascript:void()" class="nav-link"
+                                                        id="sidebarCollapse"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            width="41.5" height="28.725" viewBox="0 0 41.5 28.725">
+                                                            <g id="Group_20" data-name="Group 20"
+                                                                transform="translate(-1740 -74)">
+                                                                <line id="Line_1" data-name="Line 1" x2="40.5"
+                                                                    transform="translate(1740.5 74.5)" fill="none"
+                                                                    stroke="#fefefe" stroke-linecap="round" stroke-width="1" />
+                                                                <line id="Line_2" data-name="Line 2" x2="40.5"
+                                                                    transform="translate(1740.5 88.363)" fill="none"
+                                                                    stroke="#fefefe" stroke-linecap="round" stroke-width="1" />
+                                                                <line id="Line_3" data-name="Line 3" x2="40.5"
+                                                                    transform="translate(1740.5 102.225)" fill="none"
+                                                                    stroke="#fefefe" stroke-linecap="round" stroke-width="1" />
+                                                            </g>
+                                                        </svg></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            <div class="web-container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12">
+                                        <div id="heroSlider" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#heroSlider" data-slide-to="0" class="active"></li>
+                                                <li data-target="#heroSlider" data-slide-to="1"></li>
+                                                <li data-target="#heroSlider" data-slide-to="2"></li>
+                                                <li data-target="#heroSlider" data-slide-to="3"></li>
+                                                <li data-target="#heroSlider" data-slide-to="4"></li>
+                                                <li data-target="#heroSlider" data-slide-to="5"></li>
+                                                <li data-target="#heroSlider" data-slide-to="6"></li>
+                                                <li data-target="#heroSlider" data-slide-to="7"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="{{ asset('images/MEP_Handing.jpg') }} "
+                                                        alt="Second slide">
+                                                    <div class="heroSliderText">
+                                                        <h1>MEP Handing over Division</h1>
+                                                        <p>Freesia electromechanical taking care of the best delivery of the projects by providing Testing and commissioning till handing over the projects with special team.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="{{ asset('images/Jaya_New_2.png') }} "
+                                                        alt="Second slide">
+                                                    <div class="heroSliderText">
+                                                        <h1>Fire Fighting</h1>
+                                                        <p>Our fit-out services include Fire Fighting.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="{{ asset('images/Electrical_1.jpg') }} "
+                                                        alt="Second slide">
+                                                    <div class="heroSliderText">
+                                                        <h1>Electrical Systems</h1>
+                                                        <p>Freesia Electromechanical specialized in Electrical systems (Installation, Testing and Commissioning).</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="{{ asset('images/Plumbing_1.jpg') }} "
+                                                        alt="Second slide">
+                                                    <div class="heroSliderText">
+                                                        <h1>Plumbing systems</h1>
+                                                        <p>Freesia Electromechanical also provides an obvious solution for plumbing systems.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="{{ asset('images/ELV_1.jpg') }} "
+                                                        alt="Second slide">
+                                                    <div class="heroSliderText">
+                                                        <h1>ELV Division</h1>
+                                                        <p>Freesia ELV Division support the company with the ELV systems installation, testing and commissioning.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="{{ asset('images/Jaya_New_1.png') }} "
+                                                        alt="Second slide">
+                                                    <div class="heroSliderText">
+                                                        <h1>Modular and Ducting Facility Division</h1>
+                                                        <p>Freesia Modular and duct facility supports the projects by fabricating the modulars and ducts.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="{{ asset('images/substation.jpg') }} "
+                                                        alt="Third slide">
+                                                    <div class="heroSliderText">
+                                                        <h1>HV Division</h1>
+                                                        <p>Our competent service organization is within easy reach and
+                                                            helps to ensure high operational efficiency and performance
+                                                            throughout the substation lifecycle</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="{{ asset('images/HVAC_1.jpg') }}"
+                                                        alt="First slide">
+                                                    <div class="heroSliderText">
+                                                        <h1>HVAC</h1>
+                                                        <p>Freesia is a leading HVAC company offering HVAC installation, testing and commissioning  for all projects.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#heroSlider" role="button"
+                                                data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#heroSlider" role="button"
+                                                data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </header>
+                    <section class="welcome section-padtop-70 section-padbottom-70 section-bg-grey">
+                        <div class="top-line text-center"> &nbsp; </div>
+                        <div class="bottom-line text-center"> &nbsp; </div>
+                        <div class="web-container">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 mb-4">
+                                    <div class="welcome-image animate" data-animation="fadeInUp" data-duration="50">
+                                        <div class="img-block" style="box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px; border-radius: 16px 0 16px 0"><img src="images/Home_2.jpg" alt=""
+                                                class="obj-cover"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 offset-lg-1 col-lg-5 align-self-center">
+                                    <h3 class="mb-2 web-light v-view"><span>WHO WE ARE</span></h3>
+                                    <h1 class="mb-4 pb-2 v-view"><span>WELCOME</span></h1>
+                                    <p class="mb-4 web-light animate" data-animation="fadeInUp" data-duration="50">
+                                        <span>We are a privately owned, independent contracting company offering
+                                            professional services to the real estate and construction sector in Dubai,
+                                            UAE.<br /><br />Specialising in residential and commercial contracting, our
+                                            highly-skilled and experienced team pride themselves on ensuring complete
+                                            efficiency and quality of work.<br /><br />With customer centricity and
+                                            efficiency at our core, from project inception right through to completion,
+                                            we promise to meet our client&rsquo;s timelines and work in line with agreed
+                                            budgets.<br /><br />The professional services we provide include mechanical
+                                            engineering and plumbing (MEP), structural and civil engineering, interior
+                                            fit outs, landscaping and swimming pools.</span>
+                                    </p><a href="/about-us" class="btn web-btn web-btn-theme animate"
+                                        data-animation="fadeInUp" data-duration="50"><span>READ MORE</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="working-block partners animate" data-animation="fadeInUp" data-duration="50">
+                        <div class="web-container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="text-center">
+                                        <h5 class="web-light-text text-uppercase mb-2 v-view"><span> STRATEGIC
+                                                PARTNERS</span></h5>
+                                        <h2 class="web-light-text text-uppercase mb-3 pb-1 v-view"><span>WORKING
+                                                TOGETHER</span></h2>
+                                        <p class="text-white"><span class="page_speed_1285196390">At Freesia we work
+                                                closely with numerous local, regional and international
+                                                companies.&nbsp;<br />We value our current strategic partnerships and
+                                                look forward to growing our network in the future.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-line">&nbsp;</div>
+                    </section>
+                    <section class="our-projects section-padtop-70 section-padbottom-70 section-bg-white">
+                        <div class="top-line text-center"> &nbsp; </div>
+                        <div class="web-container-small pr-4 pl-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="heading-block text-center">
+                                        <h5 class="mb-0 v-view"><span>WE&#039;RE BUILDING FOR TOMORROW</span></h5>
+                                        <h2 class="mb-5 v-view"><span>OUR PROJECTS</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="project-box mb-5 animate" data-animation="fadeInUp" data-duration="50">
+                                        <div class="img-block big-box"><img src="{{ asset('storage/1817/riviera-611x540px.jpg') }}"
+                                                alt="Riviera Image" class="obj-cover"></div>
+                                        <h3 class="mt-4 mb-0"><span>RIVIERA</span></h3>
+                                        <h5 class="mb-2 v-view"><span>Al Meydan Street</span></h5>
+                                        <p class="web-light web-font-light mb-0 w-75"><span>Mixed use community
+                                                comprising of residential apartments and retail outlets.</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="project-box mb-5 animate" data-animation="fadeInUp" data-duration="50">
+                                        <div class="img-block small-box"><img
+                                                src="{{ asset('storage/1818/park-avenue-611x540px.jpg') }}" alt="" class="obj-cover">
+                                        </div>
+                                        <h3 class="mt-4 mb-0"><span>PARK AVENUE</span></h3>
+                                        <h5 class="mb-2 v-view"><span>Meydan Avenue, MBR City, Dubai</span></h5>
+                                        <p class="web-light web-font-light mb-0 w-75"><span>Mixed use community
+                                                comprising of residential and retail properties.</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="project-box mb-5 animate" data-animation="fadeInUp" data-duration="50">
+                                        <div class="img-block small-box"><img
+                                                src="{{ asset('images/Grand__4.jpg') }}" alt="" class="obj-cover">
+                                        </div>
+                                        <h3 class="mt-4 mb-0"><span>AZIZI GRAND</span></h3>
+                                        <h5 class="mb-2 v-view"><span>Sports City, Dubai</span></h5>
+                                        <p class="web-light web-font-light mb-0 w-75"><span>Mixed use community
+                                                featuring residential properties and retail space.</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="project-box mb-5 animate" data-animation="fadeInUp" data-duration="50">
+                                        <div class="img-block big-box"><img src="{{ asset('images/Jaya__5.jpg') }}" alt=""
+                                                class="obj-cover"></div>
+                                        <h3 class="mt-4 mb-0"><span>VENICE</span></h3>
+                                        <h5 class="mb-2 v-view"><span>Luxury Crystal Lagoon Community</span></h5>
+                                        <p class="web-light web-font-light mb-0 w-75"><span>
+                                            Landscaping at Venice, a residential beachfront community.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 mb-5">
+                                <div class="col-md-12">
+                                    <div class="text-center"><a href="/projects"
+                                            class="btn web-btn web-btn-theme animate" data-animation="fadeInUp"
+                                            data-duration="50"><span>VIEW ALL</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-line text-center"> &nbsp; </div>
+                    </section>
+                    <section class="corevalues section-padtop-70 section-padbottom-15 section-bg-grey scrollHere">
+                        <div class="top-line text-center"> &nbsp; </div>
+                        <div class="web-container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="heading-block text-center">
+                                        <h5 class="mb-0 v-view"><span>EXPERTISE THAT INSPIRES CONFIDENCE</span></h5>
+                                        <h2 class="mb-5 v-view"><span>Core Values</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-container corevalues-swiper section-padtop-30 section-padbottom-100"
+                                id="triggerStart">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="corevalues-box animate" data-animation="fadeInUp"
+                                            data-duration="50">
+                                            <div class="img-sec"><img src="{{ asset('storage/254/core_values_icon_1-(1).svg') }}" />
+                                            </div>
+                                            <h4 class="mt-3 mb-2 web-regular text-uppercase v-view"><span>ETHICS &amp;
+                                                    INTEGRITY</span></h4>
+                                            <p class="mb-0 web-light v-view"><span>We are truly committed to building
+                                                    mutual trust &amp; respect.</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="corevalues-box animate" data-animation="fadeInUp"
+                                            data-duration="50">
+                                            <div class="img-sec"><img src="{{ asset('storage/255/core_values_icon_2-(1).svg') }}" />
+                                            </div>
+                                            <h4 class="mt-3 mb-2 web-regular text-uppercase v-view"><span>EXPERTISE
+                                                    &amp; CONFIDENCE</span></h4>
+                                            <p class="mb-0 web-light v-view"><span>Our team lead by influence not
+                                                    authority. We are confident but humble and true to our word.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="corevalues-box animate" data-animation="fadeInUp"
+                                            data-duration="50">
+                                            <div class="img-sec"><img
+                                                    src="{{ asset('storage/257/core_values_icon_4-(1)-(1).svg') }}" />
+                                            </div>
+                                            <h4 class="mt-3 mb-2 web-regular text-uppercase v-view"><span>QUALITY
+                                                    CONTROL</span></h4>
+                                            <p class="mb-0 web-light v-view"><span>We are dedicated to developing and
+                                                    delivering high quality workmanship to all our clients and end
+                                                    users.</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="corevalues-box animate" data-animation="fadeInUp"
+                                            data-duration="50">
+                                            <div class="img-sec">
+                                                <img src="{{ asset('storage/258/core_values_icon_5-(1).svg') }}" />
+                                            </div>
+                                            <h4 class="mt-3 mb-2 web-regular text-uppercase v-view">
+                                            <span>PROMISES
+                                                    DELIVERED</span></h4>
+                                            <p class="mb-0 web-light v-view"><span>When we commit, we always deliver on
+                                                    time and within budget.</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="corevalues-box animate" data-animation="fadeInUp"
+                                            data-duration="50">
+                                            <div class="img-sec">
+                                                <img src="{{ asset('storage/254/core_values_icon_1-(1).svg') }}" />
+                                            </div>
+                                            <h4 class="mt-3 mb-2 web-regular text-uppercase v-view">
+                                            <span>EXECUTIONAL EXCELLENCE</span></h4>
+                                            <p class="mb-0 web-light v-view"><span>We consistently implement and execute our plans to deliver desired results.</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </section>
+                    
+    <div id="iframeContainer">
+        <button type="button" class="iframeButton">
+            <span>&#10006;</span>
+        </button>
+        <iframe src="{{ asset('files/Quality_Policy.pdf') }}"
+            frameBorder="0"
+            scrolling="auto"
+            height="100%"
+            width="100%"
+        ></iframe>
+    </div>
+{% endblock %}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}
+        <!-- Bootstrap CSS, and other stylesheets -->
+        <link rel="stylesheet" href="{{ asset('/css/vendors/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/vendors/jquery.mCustomScrollbar.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/vendors/animate.compat.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/vendors/swiper-bundle.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('sequence/css/sequence.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/custom.min.css') }}" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    {% endblock %}
+</head>
+<body class="page-partners">
+    
+    <div class="v-preloader" id="preloader"></div>
+    <div class="page-preloader" id="page-preloader">
+        <div class="page-preloader__line"></div>
+        <div class="page-preloader__progress">00%</div>
+    </div>
+    
+    <div id="page">
+    
+        {% block navbar %}
+            <!-- Include your Bootstrap navbar here -->
+            <div class="topbar for-desktop-show header_fixed show-fixed" id="topheader">
+                <div class="web-container">
+                    <nav class="navbar navbar-expand-xl navbar-light navbar-freesia"><a class="navbar-brand animate w-50"
+                            data-animation="fadeInLeft" data-duration="30" href="/">
+                            <img src="{{ asset('images/Freesia_Log_New.png') }}" alt="Freesia | Azizi Developments"
+                                style="width: 100px; height: 60px; transform: scale(2.5)"></a>
+                        
+                        <ul class="navbar-nav ml-auto animate" data-animation="fadeInRight" data-duration="30">
+                            <ul class="topmenu" id="expandedMenu">
+                                <li class="nav-item"><a class="nav-link web-light-text" target="_self"
+                                        href="/">Home</a></li>
+                                <li class="nav-item"><a class="nav-link web-light-text" target="_self"
+                                        href="/about-us">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link web-light-text" target="_self"
+                                        href="/our-team">Our Team</a></li>
+                                <li class="nav-item"><a class="nav-link web-light-text" target="_self"
+                                        href="/partners">Our Partners</a></li>
+                                <li class="nav-item"><a class="nav-link web-light-text" target="_self"
+                                        href="/projects">Our Projects</a></li>
+                                <li class="nav-item"><a class="nav-link web-light-text" target="_self"
+                                        href="/albums">Image Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link web-light-text" target="_self"
+                                        href="/careers">Careers</a></li>
+                                <li class="nav-item"><a class="nav-link web-light-text" target="_self"
+                                        href="/contact-us">Contact Us</a></li>
+                            </ul>
+                            <li class="nav-item menu-bar-icons"><a href="javascript:void()" class="nav-link"
+                                    id="toExpand"><span></span><span></span><span></span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        {% endblock %}
+
+        {% block body %}{% endblock %}
+
+        {% block footer %}
+            <div class="wrapper">
+                <nav id="sidebar">
+                    <div></div>
+                    <div class="sidebar-header"><button id="dismiss" class="btn float-right"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="27.687" height="26.227"
+                                viewBox="0 0 27.687 26.227">
+                                <defs>
+                                    <style>
+                                        .cls-sidebar {
+                                            fill: none !important;
+                                            stroke: #fff !important;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Group_108" transform="translate(-1615.157 -201.136)">
+                                    <path id="Line_40" d="M27 0L0 25.5" class="cls-sidebar"
+                                        transform="translate(1615.5 201.5)" />
+                                    <path id="Line_41" d="M0 0L27 25.5" class="cls-sidebar"
+                                        transform="translate(1615.5 201.5)" />
+                                </g>
+                            </svg></button></div>
+                    <ul class="list-unstyled components">
+                        <li><a href="/" target="_self"><span>Home</span></a></li>
+                        <li><a href="/about-us" target="_self"><span>About Us</span></a></li>
+                        <li><a href="/our-team" target="_self"><span>Our Team</span></a></li>
+                        <li><a href="/partners" target="_self"><span>Our Partners</span></a></li>
+                        <li><a href="/projects" target="_self"><span>Our Projects</span></a></li>
+                        <li><a href="/albums" target="_self"><span>Image Gallery</span></a></li>
+                        <li><a href="/careers" target="_self"><span>Careers</span></a></li>
+                        <li><a href="/contact-us" target="_self"><span>Contact Us</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay"></div>
+            
+            <section class="project-in-mind">
+                <div class="web-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="hover-color">&nbsp; </div>
+                            <div class="hover-btn animate" data-animation="fadeInUp" data-duration="50"><a
+                                    href="/contact-us" class="text-white web-h5">LETS TALK</a></div>
+                            <div class="project-content">
+                                <h3 class="text-center">Got something in mind?</h3>
+                                <h2 class="text-center mb-5 v-view"><span>GET IN TOUCH WITH US TODAY</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <footer class="section-padtop-15 section-padbottom-15">
+                <div class="web-container">
+                    <div class="row">
+                        <div class="col-lg-3 align-self-center">
+                            <p class="mb-0 web-light animate text-center" data-animation="fadeInUp"
+                                data-duration="70">Freesia Electromechanical LLC.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 align-self-center">
+                            <p class="mb-0 web-light animate text-center" data-animation="fadeInUp"
+                                data-duration="70">Copyright © 2024 Freesia Contracting. All Right Reserved.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 align-self-center">
+                            <div class="float-lg-right">
+                                <ul class="list-inline animate" data-animation="fadeInUp" data-duration="70">
+                                    <li class="list-inline-item"><a target="_self"
+                                            href="/terms-and-conditions">Terms</a></li>
+                                    <li class="list-inline-item"><a target="_self"
+                                            href="/privacy-policy">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        {% endblock %}
+    
+    </div>
+    
+    {% block javascripts %}
+        <!-- Bootstrap JS, and other scripts -->
+        <script src="{{ asset('js/vendors/jquery.min.js') }}"></script>
+        <script src="{{ asset('sequence/js/sequence.js') }}"></script>
+        <script src="{{ asset('js/vendors/swiper-bundle.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/popper.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/css_browser_selector.js') }}"></script>
+        <script src="{{ asset('js/vendors/jquery.inview.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/form-validation.js') }}"></script>
+        <script src="{{ asset('js/custom.js') }}"></script>
+        <script src="{{ asset('js/jquery-sequencer.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+        <script>
+            var vh = screen.height;
+            var xi = document.getElementById("portrait-warnning");
+            //if (vh < 450) { xi.style.display = 'block'; } else { xi.style.display = 'none'; }
+            $('#heroSlider').carousel();
+        </script>
+    {% endblock %}
+</body>
+</html>

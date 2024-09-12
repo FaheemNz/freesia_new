@@ -1,0 +1,43 @@
+index:
+    path: /
+    controller: App\Controller\PageController::index
+
+contact_us:
+    path: /contact-us
+    controller: App\Controller\PageController::contactUs
+    
+submit_contact_us:
+    path: /submit-contact-us
+    controller: App\Controller\ContactUsController::onContact
+    
+about_us:
+    path: /about-us
+    controller: App\Controller\PageController::aboutUs
+    
+our_team:
+    path: /our-team
+    controller: App\Controller\PageController::ourTeam
+    
+partners:
+    path: /partners
+    controller: App\Controller\PageController::partners
+    
+careers:
+    path: /careers
+    controller: App\Controller\PageController::careers
+    
+projects:
+    path: /projects
+    controller: App\Controller\PageController::projects
+
+albums:
+    path: /albums
+    controller: App\Controller\PageController::albums
+    
+terms_and_condition:
+    path: /terms-and-conditions
+    controller: App\Controller\PageController::termsAndConditions
+    
+privacy_policy:
+    path: /privacy-policy
+    controller: App\Controller\PageController::privacyPolicy
